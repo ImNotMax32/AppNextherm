@@ -17,10 +17,9 @@ export default function Login() {
   const pending = false;
 
   const message: Message | undefined = messageParam ? {
-    text: messageParam,
-    type: 'error'
+    error: messageParam
   } : undefined;
-
+  
   return (
     <div className="min-h-[100dvh] flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 bg-white">
       <motion.div 
